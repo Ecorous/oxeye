@@ -30,7 +30,7 @@ dependencies {
 	modImplementation libs.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
 	// https://mvnrepository.com/artifact/org.python/jython
-	include implementation('org.python:jython-standalone:2.7.2')
+	include implementation('org.python:jython:2.7.0')
 
 }
 
