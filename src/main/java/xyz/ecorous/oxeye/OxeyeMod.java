@@ -1,17 +1,11 @@
 package xyz.ecorous.oxeye;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.client.MinecraftClient;
 import org.python.core.PyException;
-import org.python.util.PythonInterpreter;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
-import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.ecorous.oxeye.PythonHandler;
 import java.io.File;
 import java.nio.file.Path;
 
@@ -55,6 +49,6 @@ public class OxeyeMod implements ModInitializer {
 
 	public void onInitialize(ModContainer mod) {
 		getAndRunScripts();
-		LOGGER.info("Loaded " + mod.metadata().name() + " version " + mod.metadata().version() + "!");
+		LOGGER.info("Loaded " + mod.metadata().name() + " version " + mod.metadata().version().raw() + "!");
 	}
 }
